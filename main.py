@@ -1,3 +1,4 @@
+from collections import Counter
 # Read text from a file, and count the occurence of words in that text
 # Example:
 # count_words("The cake is done. It is a big cake!") 
@@ -13,7 +14,6 @@ def count_words():
     text = read_file_content("story.txt")
     # [assignment] Add your code here
     
-    from collections import Counter
     my_list=text.split()
     
     collections=Counter(my_list)
